@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".menu_admin_activity.SettingApiActivity">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#FFF">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Link API"
+            android:textColor="#55585a"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="@font/metro_bold"
+            android:layout_marginLeft="18dp"
+            android:layout_marginVertical="5dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_gray"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Isikan URL API Anda Disini"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:id="@+id/linkApi"
+            android:inputType="text"
+            android:elevation="2dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="10dp"
+            android:id="@+id/loadingApi"
+            android:visibility="gone">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Updating....."
+                android:layout_gravity="center"
+                android:textColor="#55585a"/>
+            <ProgressBar
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:indeterminateTintMode="src_atop"
+                android:indeterminateTint="#55585a"
+                android:id="@+id/loadingDataCp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center|bottom">
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:text="RESET"
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                android:fontFamily="@font/metro_bold"
+                android:background="@drawable/btn_yellow"
+                android:id="@+id/btnResetApi"
+                android:layout_marginBottom="10dp"/>
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text="Update"
+                android:layout_marginLeft="10dp"
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                android:fontFamily="@font/metro_bold"
+                android:background="@drawable/btn_bluedark"
+                android:id="@+id/btnUpdateApi"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

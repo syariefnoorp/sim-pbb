@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".menu_activity.ChatRoomActivity">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview_chat"
+        android:layout_weight="1.04">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:weightSum="1">
+        <EditText
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:background="@drawable/view_chat_reply"
+            android:hint="Tulis pesan disini..."
+            android:textSize="@dimen/_13sdp"
+            android:padding="@dimen/_10sdp"
+            android:layout_alignTop="@+id/button"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/button"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_marginHorizontal="@dimen/_3sdp"
+            android:elevation="@dimen/_2sdp"
+            android:layout_weight="1.02" />
+
+        <Button
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSend" style="?android:attr/borderlessButtonStyle"
+            android:drawableLeft="@drawable/ic_send_24dp"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".menu_activity.DetailBeritaActivity">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff">
+        <TextView
+            android:id="@+id/detailJudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Pemilu Serentak tahun 2019"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#55585a"
+            android:fontFamily="@font/metro_bold"
+            android:layout_marginTop="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posted : "
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:fontFamily="@font/metro_medium"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/detailTgl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24/04/2019"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:fontFamily="@font/metro_medium"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/detailIsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pemilu serentak tahun 2019 dilaksanakan pada 17 April 2019. KPU berharap masyarakat berpartisipasi pada pemilu tahun 2019"
+            android:fontFamily="@font/metro_medium"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="30dp"/>
+    </LinearLayout>
+
+</LinearLayout>

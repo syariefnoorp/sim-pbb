@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+    android:background="#f4f4f4"
+    tools:context=".menu_admin_activity.FaqAdminActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollFaq"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pertanyaan"
+                android:textColor="#55585a"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:fontFamily="@font/metro_bold"
+                android:layout_marginHorizontal="8dp"/>
+            <EditText
+                android:id="@+id/inputPertanyaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_gray"
+                android:padding="10dp"
+                android:hint="Tulis Pertanyaan..."
+                android:elevation="2dp"
+                android:layout_marginHorizontal="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kategori"
+                android:textColor="#55585a"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:fontFamily="@font/metro_bold"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="5dp"/>
+            <EditText
+                android:id="@+id/inputKategori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_gray"
+                android:padding="10dp"
+                android:hint="Tulis Kategori FAQ..."
+                android:elevation="2dp"
+                android:layout_marginHorizontal="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jawaban"
+                android:textColor="#55585a"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:fontFamily="@font/metro_bold"
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="8dp"/>
+            <EditText
+                android:id="@+id/inputJawaban"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:gravity="top|left"
+                android:maxLines="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:padding="10dp"
+                android:hint="Tulis Jawaban..."
+                android:elevation="2dp"
+                android:background="@drawable/round_gray"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/loadingSubmitFaq"
+            android:visibility="gone">
+            <ProgressBar
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:indeterminateTintMode="src_atop"
+                android:indeterminateTint="@color/biru"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sedang Dalam Proses..."
+                android:gravity="center"
+                android:textSize="15sp"
+                android:fontFamily="@font/metro_medium"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:id="@+id/btnAsli">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnCancelFaq"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/btn_yellow"
+                    android:fontFamily="@font/metro_bold"
+                    android:text="Cancel"
+                    android:textColor="#FFF"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btnSubmitFaq"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/btn_bluedark"
+                    android:fontFamily="@font/metro_bold"
+                    android:text="Submit"
+                    android:textColor="#FFF"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPalsu"
+            android:visibility="invisible">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/btn_yellow"
+                    android:fontFamily="@font/metro_bold"
+                    android:text="asdasd"
+                    android:textColor="#FFF"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/btn_bluedark"
+                    android:fontFamily="@font/metro_bold"
+                    android:text="rtyrty"
+                    android:textColor="#FFF"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center|bottom">-->
+            <!--<Button-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:text="Cancel"-->
+                <!--android:textColor="#FFF"-->
+                <!--android:textSize="15sp"-->
+                <!--android:fontFamily="@font/metro_bold"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:background="@drawable/btn_yellow"-->
+                <!--android:id="@+id/btnCancelFaq"-->
+                <!--android:layout_marginBottom="10dp"/>-->
+            <!--<Button-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:text="Submit"-->
+                <!--android:textColor="#FFF"-->
+                <!--android:textSize="15sp"-->
+                <!--android:fontFamily="@font/metro_bold"-->
+                <!--android:background="@drawable/btn_bluedark"-->
+                <!--android:id="@+id/btnSubmitFaq"-->
+                <!--android:layout_marginBottom="10dp"/>-->
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

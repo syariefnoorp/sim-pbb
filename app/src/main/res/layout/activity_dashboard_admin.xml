@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DashboardAdminActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:openDrawer="start">
+
+        <!--content-->
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_menu">
+
+                    <include
+                        layout="@layout/app_bar_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SIM-PBB"
+                        android:textColor="#ffffff"
+                        android:textSize="36sp"
+                        android:fontFamily="@font/metro_medium"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sistem Informasi Manajemen Pajak Bumi dan Bangunan"
+                        android:textColor="#fff"
+                        android:textSize="17sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:fontFamily="@font/metro_medium"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="Main Menu"
+                    android:textSize="20sp"
+                    android:textColor="#55585a"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/metro_bold"
+                    android:gravity="center"
+                    android:background="#fff"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#fff">
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:columnCount="4"
+                        android:rowCount="1"
+                        android:background="#fff"
+                        android:paddingTop="10dp"
+                        android:layout_gravity="center">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="80dp"
+                            android:layout_height="110dp"
+                            android:layout_marginBottom="15dp">
+                            <FrameLayout
+                                android:layout_gravity="center"
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:background="@drawable/set_stroke"
+                                android:id="@+id/cv_chat">
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_margin="10dp"
+                                    android:src="@drawable/icon_pengaduan"
+                                    android:layout_gravity="center"/>
+                                <TextView
+                                    android:id="@+id/badgeCounterChat"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:text=""
+                                    android:layout_gravity="right|end|top"
+                                    android:layout_marginTop="3dp"
+                                    android:background="@drawable/badge_background"
+                                    android:gravity="center"
+                                    android:padding="3dp"
+                                    android:textColor="#FFF"
+                                    android:textSize="10sp"
+                                    android:visibility="gone"/>
+                            </FrameLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Pengaduan"
+                                android:gravity="center"
+                                android:textColor="@color/text"
+                                android:layout_marginTop="10dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="80dp"
+                            android:layout_height="110dp"
+                            android:layout_marginBottom="15dp">
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:background="@drawable/set_stroke"
+                                android:id="@+id/cv_news">
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:src="@drawable/icon_berita"
+                                    android:layout_margin="10dp"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Berita"
+                                android:gravity="center"
+                                android:textColor="@color/text"
+                                android:layout_marginTop="10dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="80dp"
+                            android:layout_height="110dp"
+                            android:layout_marginBottom="15dp">
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/set_stroke"
+                                android:id="@+id/cv_faq">
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:src="@drawable/icon_faq"
+                                    android:layout_margin="10dp"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="FAQ"
+                                android:gravity="center"
+                                android:textColor="@color/text"
+                                android:layout_marginTop="10dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="80dp"
+                            android:layout_height="110dp"
+                            android:layout_marginBottom="15dp">
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/set_stroke"
+                                android:id="@+id/cv_config">
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:src="@drawable/logo_setting"
+                                    android:layout_margin="10dp"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Config"
+                                android:gravity="center"
+                                android:textColor="@color/text"
+                                android:layout_marginTop="10dp"/>
+                        </LinearLayout>
+
+                    </GridLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_header_main"
+            app:menu="@menu/activity_main_drawer" >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:text="Keluar"
+                android:background="@drawable/bg_nav_menu"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/metro_bold"
+                android:textColor="#fff"
+                android:id="@+id/btn_keluar"/>
+
+        </android.support.design.widget.NavigationView>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

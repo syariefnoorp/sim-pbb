@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".menu_fragment.CekNopFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="?attr/actionBarSize">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cek NOP Tunggal"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@color/blueSmooth">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NOP"
+                android:textColor="@color/blueDark"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginLeft="18dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:hint="Isikan NOP Anda Disini"
+                android:padding="8dp"
+                android:textSize="15sp"
+                android:id="@+id/inputNop"
+                android:inputType="phone"
+                android:elevation="3dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tahun"
+                android:textColor="@color/blueDark"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="18dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_white"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:hint="Isikan Tahun Disini"
+                android:padding="8dp"
+                android:textSize="15sp"
+                android:inputType="number"
+                android:id="@+id/tahunNop"
+                android:elevation="3dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center|bottom">
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:text="GO!"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_white"
+                    android:id="@+id/btnGoCekNop"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Reset Filter"
+                    android:background="@drawable/btn_bluedark"
+                    android:id="@+id/btnResetCekNop"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

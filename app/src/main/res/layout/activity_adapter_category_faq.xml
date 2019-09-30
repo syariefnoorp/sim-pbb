@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".adapter.AdapterCategoryFaq">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_15sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:padding="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:background="@drawable/round_white"
+        android:elevation="@dimen/_3sdp">
+        <TextView
+            android:id="@+id/kategoriFaq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ga Penting"
+            android:textSize="17sp"
+            android:fontFamily="@font/metro_bold"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/test"
+        android:text="kategori"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:visibility="gone"/>
+
+</LinearLayout>

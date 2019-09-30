@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingHorizontal="@dimen/_10sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal"
+            android:layout_marginVertical="@dimen/_4sdp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:layout_marginVertical="@dimen/_4sdp"
+                android:textSize="@dimen/_14sdp"
+                android:gravity="left"
+                android:id="@+id/badgeUsername"/>
+            <TextView
+                android:id="@+id/badgeNotifAdmin"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:background="@drawable/badge_background"
+                android:padding="3dp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_8sdp"
+                android:textColor="#FFF"
+                android:visibility="invisible"/>
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/gray"-->
+            <!--android:layout_below="@id/badgeUsername"-->
+            <!--android:layout_marginVertical="5dp"/>-->
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_24sdp"
+            android:id="@+id/btnSeeChat"
+            android:layout_marginVertical="@dimen/_3sdp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_bluedark"
+            android:text="lihat"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="#FFF"
+            android:fontFamily="@font/metro_bold"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

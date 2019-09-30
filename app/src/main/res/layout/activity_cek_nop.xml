@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".menu_activity.CekNopActivity">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        android:background="#FFF">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NOP"
+            android:textColor="#55585a"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="@font/metro_bold"
+            android:layout_marginLeft="@dimen/_15sdp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_gray"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:hint="Isikan NOP Anda Disini"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_13sdp"
+            android:id="@+id/inputNop"
+            android:inputType="phone"
+            android:elevation="@dimen/_2sdp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tahun"
+            android:textColor="#55585a"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="@font/metro_bold"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_gray"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:hint="Isikan Tahun Disini"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_13sdp"
+            android:inputType="number"
+            android:id="@+id/tahunNop"
+            android:elevation="@dimen/_2sdp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center|bottom">
+            <Button
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="RESET"
+                android:textColor="#FFF"
+                android:textSize="@dimen/_13sdp"
+                android:fontFamily="@font/metro_bold"
+                android:background="@drawable/btn_yellow"
+                android:id="@+id/btnResetCekNop"
+                android:layout_marginBottom="@dimen/_10sdp"/>
+            <Button
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:text="PROCESS"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="#FFF"
+                android:textSize="@dimen/_13sdp"
+                android:fontFamily="@font/metro_bold"
+                android:background="@drawable/btn_bluedark"
+                android:id="@+id/btnGoCekNop"
+                android:layout_marginBottom="@dimen/_10sdp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

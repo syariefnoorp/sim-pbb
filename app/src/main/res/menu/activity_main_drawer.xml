@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item android:title="Informasi Akun :">
+            <menu>
+                <item android:id="@+id/nav_nama"
+                    android:icon="@drawable/ic_person"
+                    android:title="" />
+                <item android:id="@+id/nav_nop"
+                    android:icon="@mipmap/ic_numb_foreground"
+                    android:title="NOP" />
+            </menu>
+        </item>
+    </group>
+</menu>

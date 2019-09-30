@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="@dimen/_220sdp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sdp"
+            android:layout_height="wrap_content"
+            android:text="Layanan pengaduan untuk wajib pajak yang mengalami kendala"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"
+            android:text="Username   :   unknown"
+            android:id="@+id/infoUsername"/>
+        <Button
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:text="Start chat"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="#FFF"
+            android:textSize="15sp"
+            android:fontFamily="@font/metro_bold"
+            android:background="@drawable/btn_bluedark"
+            android:id="@+id/btnStartChat"
+            android:layout_marginBottom="@dimen/_10sdp"/>
+    </LinearLayout>
+
+</RelativeLayout>

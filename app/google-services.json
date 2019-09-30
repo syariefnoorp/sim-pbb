@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "439137407239",
+    "firebase_url": "https://chatpbb.firebaseio.com",
+    "project_id": "chatpbb",
+    "storage_bucket": "chatpbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439137407239:android:de87ba58ec14aaad",
+        "android_client_info": {
+          "package_name": "com.example.syari.sim_pbb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "439137407239-7g4cf42lrr5mbj5bg55ta0fpe3kkct3u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.syari.sim_pbb",
+            "certificate_hash": "1a3ac8c207914f098b7a87c75d985a240b87d3e2"
+          }
+        },
+        {
+          "client_id": "439137407239-umot9db8q7i15nomn4inek8en42laoft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbmMU-V_nruBTFyetirkNRHOSZPBYcuPo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "439137407239-umot9db8q7i15nomn4inek8en42laoft.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

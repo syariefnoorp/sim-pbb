@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_header"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/bg_nav_menu"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/nav_header_imageView"-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="64dp"-->
+        <!--android:src="@drawable/logo_pajak" />-->
+
+    <TextView
+        android:id="@+id/nav_header_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="SIM-PBB"
+        android:textSize="@dimen/_22sdp"
+        android:textColor="#fff"
+        android:fontFamily="@font/metro_bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="@dimen/_11sdp"
+        android:text="DISPENDA LAMONGAN"
+        android:textColor="#fff"
+        android:fontFamily="@font/metro_medium"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="@dimen/_11sdp"
+        android:text="JAWA TIMUR"
+        android:textColor="#fff"
+        android:fontFamily="@font/metro_medium"/>
+</LinearLayout>
